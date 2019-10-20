@@ -1,6 +1,3 @@
-% S-Curve Motion Control
-% M5842445 Sarayut Pongsanthia
-
 y = zeros(1,100); y1 = zeros(1,100); y2 = zeros(1,100);
 % SIGMF(X, [A, C]) = 1./(1 + EXP(-A*(X-C))
 
