@@ -31,19 +31,8 @@ int main()
       y2 = 1 / (1 + std::exp(-a2 * (f[i] - c2))); /* S-curve deceleration */
       y = std::abs((y1)-y2) * 255;                /* absolute and *255 for scale up to PWM */
 
-      /*PWM analog output pin 9 from y value 0 - 255 */
-      // analogWrite(9, y);
-      // analogWrite(10, y);
-      // analogWrite(11, y);
-
-      /*print labels */
-      // cout << "y " << i << " = " << setprecision(3) << y << endl;
-      // cout << setprecision(3) << y << endl;
+      /*print stuffs */
       printf("y:%f\ty1:%f\tt:%f\n", y/256, y1, f[i]);
-      // Serial.print("y ");
-      // Serial.print(i); /* prints a label */
-      // Serial.print(" = ");
-      // Serial.println(y, 3); /* print the number */
     }
   }
 }
